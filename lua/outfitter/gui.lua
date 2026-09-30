@@ -654,7 +654,7 @@ function PANEL:Init()
 	sheet:AddSheet("#spawnmenu.utilities.settings", settingswrap, "icon16/cog.png")
 	local blocklistPanel = self:Add("DPanel")
 	self.blocklistPanel = blocklistPanel
-	sheet:AddSheet("#Blocklist", blocklistPanel, "icon16/stop.png")
+	sheet:AddSheet("#outfitter_blocklist", blocklistPanel, "icon16/stop.png")
 	local infopanel = self:Add("EditablePanel")
 	self.infopanel = infopanel
 	infopanel.Think = function()
@@ -1725,7 +1725,7 @@ local icon = "icon64/outfitter.png"
 icon = file.Exists("materials/" .. icon, 'GAME') and icon or "icon64/playermodel.png"
 
 list.Set("DesktopWindows", Tag, {
-	title     = "Outfitter",
+	title     = "#outfitter_maintitle",
 	icon      = icon,
 	width     = 1,
 	height    = 1,
